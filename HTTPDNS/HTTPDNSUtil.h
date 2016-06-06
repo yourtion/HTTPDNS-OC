@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface HTTPDNSUtil : NSObject
-
++ (BOOL)isHTTPEnable;
++ (int)getSecondTimestamp;
 @end
