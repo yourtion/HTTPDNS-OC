@@ -7,15 +7,20 @@
 //
 
 #import "HTTPDNSUtil.h"
-#import <UIKit/UIKit.h>
+
+#if TARGET_OS_IPHONE
+    #import <UIKit/UIKit.h>
+#endif
 
 @implementation HTTPDNSUtil
 
 + (BOOL)isHTTPEnable {
+    #if TARGET_OS_IPHONE
     if([[[UIDevice currentDevice] systemVersion] compare:@"9.0" options:NSNumericSearch] != NSOrderedAscending){
         NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
         return [[[infoDict objectForKey:@"NSAppTransportSecurity"] objectForKey:@"NSAllowsArbitraryLoads"] boolValue];
     }
+    #endif
     return YES;
 }
 
