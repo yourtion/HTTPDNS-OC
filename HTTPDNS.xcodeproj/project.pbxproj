@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB14D4D51D095A4A00EB35C9 /* HTTPDNS.h in Headers */ = {isa = PBXBuildFile; fileRef = CB45C1F01CA809D30018439A /* HTTPDNS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB14D4D61D095A4A00EB35C9 /* HTTPDNSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B29A1D053E5300434C3A /* HTTPDNSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB14D4D71D095A4A00EB35C9 /* HTTPDNSRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB14D4D81D095A5800EB35C9 /* HTTPDNSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B29B1D053E5300434C3A /* HTTPDNSClient.m */; };
+		CB14D4D91D095A5800EB35C9 /* HTTPDNSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */; };
+		CB14D4DA1D095A5800EB35C9 /* HTTPDNSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */; };
+		CB14D4DB1D095A6900EB35C9 /* HTTPDNSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B29E1D053E7C00434C3A /* HTTPDNSUtil.h */; };
 		CB45C1F11CA809D30018439A /* HTTPDNS.h in Headers */ = {isa = PBXBuildFile; fileRef = CB45C1F01CA809D30018439A /* HTTPDNS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB65B29C1D053E5300434C3A /* HTTPDNSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B29A1D053E5300434C3A /* HTTPDNSClient.h */; };
+		CB65B29C1D053E5300434C3A /* HTTPDNSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B29A1D053E5300434C3A /* HTTPDNSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB65B29D1D053E5300434C3A /* HTTPDNSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B29B1D053E5300434C3A /* HTTPDNSClient.m */; };
 		CB65B2A01D053E7C00434C3A /* HTTPDNSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B29E1D053E7C00434C3A /* HTTPDNSUtil.h */; };
 		CB65B2A11D053E7C00434C3A /* HTTPDNSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */; };
-		CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */; };
+		CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB14D4CD1D095A0000EB35C9 /* HTTPDNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPDNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB45C1ED1CA809D30018439A /* HTTPDNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPDNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB45C1F01CA809D30018439A /* HTTPDNS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPDNS.h; sourceTree = "<group>"; };
 		CB45C1F21CA809D30018439A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB14D4C91D095A0000EB35C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB45C1E91CA809D30018439A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				CB45C1ED1CA809D30018439A /* HTTPDNS.framework */,
+				CB14D4CD1D095A0000EB35C9 /* HTTPDNS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +89,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		CB14D4CA1D095A0000EB35C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB14D4D51D095A4A00EB35C9 /* HTTPDNS.h in Headers */,
+				CB14D4D61D095A4A00EB35C9 /* HTTPDNSClient.h in Headers */,
+				CB14D4D71D095A4A00EB35C9 /* HTTPDNSRecord.h in Headers */,
+				CB14D4DB1D095A6900EB35C9 /* HTTPDNSUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB45C1EA1CA809D30018439A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,9 +114,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CB45C1EC1CA809D30018439A /* HTTPDNS */ = {
+		CB14D4CC1D095A0000EB35C9 /* HTTPDNS_OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB45C1F51CA809D30018439A /* Build configuration list for PBXNativeTarget "HTTPDNS" */;
+			buildConfigurationList = CB14D4D21D095A0000EB35C9 /* Build configuration list for PBXNativeTarget "HTTPDNS_OSX" */;
+			buildPhases = (
+				CB14D4C81D095A0000EB35C9 /* Sources */,
+				CB14D4C91D095A0000EB35C9 /* Frameworks */,
+				CB14D4CA1D095A0000EB35C9 /* Headers */,
+				CB14D4CB1D095A0000EB35C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTTPDNS_OSX;
+			productName = HTTPDNS;
+			productReference = CB14D4CD1D095A0000EB35C9 /* HTTPDNS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB45C1EC1CA809D30018439A /* HTTPDNS_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB45C1F51CA809D30018439A /* Build configuration list for PBXNativeTarget "HTTPDNS_iOS" */;
 			buildPhases = (
 				CB45C1E81CA809D30018439A /* Sources */,
 				CB45C1E91CA809D30018439A /* Frameworks */,
@@ -100,7 +145,7 @@
 			);
 			dependencies = (
 			);
-			name = HTTPDNS;
+			name = HTTPDNS_iOS;
 			productName = HTTPDNS;
 			productReference = CB45C1ED1CA809D30018439A /* HTTPDNS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -114,6 +159,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Yourtion;
 				TargetAttributes = {
+					CB14D4CC1D095A0000EB35C9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					CB45C1EC1CA809D30018439A = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -131,12 +179,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB45C1EC1CA809D30018439A /* HTTPDNS */,
+				CB45C1EC1CA809D30018439A /* HTTPDNS_iOS */,
+				CB14D4CC1D095A0000EB35C9 /* HTTPDNS_OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB14D4CB1D095A0000EB35C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB45C1EB1CA809D30018439A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +203,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB14D4C81D095A0000EB35C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB14D4D81D095A5800EB35C9 /* HTTPDNSClient.m in Sources */,
+				CB14D4D91D095A5800EB35C9 /* HTTPDNSUtil.m in Sources */,
+				CB14D4DA1D095A5800EB35C9 /* HTTPDNSRecord.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB45C1E81CA809D30018439A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +226,50 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		CB14D4D31D095A0000EB35C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HTTPDNS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNS;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = HTTPDNS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB14D4D41D095A0000EB35C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HTTPDNS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNS;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = HTTPDNS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		CB45C1F31CA809D30018439A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -261,7 +371,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HTTPDNS;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -277,7 +387,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HTTPDNS;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -285,6 +395,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB14D4D21D095A0000EB35C9 /* Build configuration list for PBXNativeTarget "HTTPDNS_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB14D4D31D095A0000EB35C9 /* Debug */,
+				CB14D4D41D095A0000EB35C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CB45C1E71CA809D30018439A /* Build configuration list for PBXProject "HTTPDNS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -294,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB45C1F51CA809D30018439A /* Build configuration list for PBXNativeTarget "HTTPDNS" */ = {
+		CB45C1F51CA809D30018439A /* Build configuration list for PBXNativeTarget "HTTPDNS_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB45C1F61CA809D30018439A /* Debug */,

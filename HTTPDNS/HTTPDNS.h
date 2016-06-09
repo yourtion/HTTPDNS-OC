@@ -2,11 +2,11 @@
 //  HTTPDNS.h
 //  HTTPDNS
 //
-//  Created by YourtionGuo on 3/27/16.
+//  Created by YourtionGuo on 6/9/16.
 //  Copyright © 2016 Yourtion. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for HTTPDNS.
 FOUNDATION_EXPORT double HTTPDNSVersionNumber;
