@@ -402,6 +402,7 @@
 				CB14D4D41D095A0000EB35C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB45C1E71CA809D30018439A /* Build configuration list for PBXProject "HTTPDNS" */ = {
 			isa = XCConfigurationList;

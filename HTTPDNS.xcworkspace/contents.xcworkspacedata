@@ -4,4 +4,10 @@
    <FileRef
       location = "group:HTTPDNS.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Demos/HTTPDNS-Mac-Demo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Demos/HTTPDNS-iOS-Demo.xcodeproj">
+   </FileRef>
 </Workspace>

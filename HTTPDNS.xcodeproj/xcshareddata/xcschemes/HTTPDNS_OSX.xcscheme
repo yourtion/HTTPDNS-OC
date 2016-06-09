@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB14D4CC1D095A0000EB35C9"
-               BuildableName = "HTTPDNS_OSX.framework"
+               BuildableName = "HTTPDNS.framework"
                BlueprintName = "HTTPDNS_OSX"
                ReferencedContainer = "container:HTTPDNS.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB14D4CC1D095A0000EB35C9"
-            BuildableName = "HTTPDNS_OSX.framework"
+            BuildableName = "HTTPDNS.framework"
             BlueprintName = "HTTPDNS_OSX"
             ReferencedContainer = "container:HTTPDNS.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB14D4CC1D095A0000EB35C9"
-            BuildableName = "HTTPDNS_OSX.framework"
+            BuildableName = "HTTPDNS.framework"
             BlueprintName = "HTTPDNS_OSX"
             ReferencedContainer = "container:HTTPDNS.xcodeproj">
          </BuildableReference>
