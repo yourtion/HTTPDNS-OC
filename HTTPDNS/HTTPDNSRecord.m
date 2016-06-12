@@ -27,4 +27,10 @@
     _cached = cached;
 }
 
+- (NSString *)description {
+    NSString *cached = _cached ? @"Cached" : @"";
+    NSString *ips = [_ips componentsJoinedByString:@" | "];
+    return [NSString stringWithFormat:@"%@ %@ : %d in [ %@ ]",cached, _ip, _timeout, ips];
+}
+
 @end

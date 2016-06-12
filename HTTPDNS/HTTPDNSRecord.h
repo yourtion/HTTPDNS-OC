@@ -17,5 +17,6 @@
 
 - (instancetype)init:(NSArray *)ips ttl:(int)ttl;
 - (void) setCached:(BOOL)cached;
+- (NSString *)description;
 
 @end
