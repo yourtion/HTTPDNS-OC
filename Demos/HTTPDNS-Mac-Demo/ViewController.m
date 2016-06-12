@@ -15,6 +15,9 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    HTTPDNSBase *dns = [HTTPDNSFactory getDNSPod];
+    HTTPDNSRecord *res =  [dns requsetRecordSync:@"qq.com"];
+    NSLog(@"%@", res.description);
 }
 
 - (void)setRepresentedObject:(id)representedObject {
