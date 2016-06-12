@@ -8,8 +8,6 @@
 
 #import "HTTPDNSClient.h"
 
-
-
 @implementation HTTPDNSClient
 
 @end
