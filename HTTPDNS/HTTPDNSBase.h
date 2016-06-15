@@ -25,9 +25,11 @@ const static NSString *kHTTPDNS_DNSPOD_SERVER_ADDRESS = @"http://119.29.29.29/";
 
 @end
 
+typedef void(^HTTPDNSCallback)(HTTPDNSRecord *record);
+
 @interface HTTPDNSBase : NSObject  <HTTPDNSBaseProtocol>
 
-- (void)requsetRecord:(NSString *)domain callback:(void (HTTPDNSRecord *record))callback;
+- (void)requsetRecord:(NSString *)domain callback:(HTTPDNSCallback)callback;
 - (HTTPDNSRecord *)requsetRecordSync:(NSString *)domain;
 
 @end

@@ -18,14 +18,14 @@
     return nil;
 }
 
-- (void)requsetRecord:(NSString *)domain callback:(void (HTTPDNSRecord *record))callback {
+- (void)requsetRecord:(NSString *)domain callback:(HTTPDNSCallback)callback {
     NSString *urlString = [self getRequestString:domain];
     NSURL *url = [NSURL URLWithString:urlString];
     
-    [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         HTTPDNSRecord *res = [self parseResult:data];
         callback(res);
-    }];
+    }] resume];
 }
 
 -(HTTPDNSRecord *)requsetRecordSync:(NSString *)domain {
