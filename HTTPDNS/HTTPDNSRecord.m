@@ -23,6 +23,18 @@
     return self;
 }
 
+- (instancetype)init:(NSArray *)ips timeout:(int)timeout {
+    if (self = [super init]) {
+        if ([ips count] > 0) {
+            _ip = ips[0];
+            _ips = ips;
+            _timeout = timeout;
+            _cached = YES;
+        }
+    }
+    return self;
+}
+
 -(void)setCached:(BOOL)cached {
     _cached = cached;
 }
@@ -31,6 +43,11 @@
     NSString *cached = _cached ? @"Cached" : @"";
     NSString *ips = [_ips componentsJoinedByString:@" | "];
     return [NSString stringWithFormat:@"%@ %@ : %d in [ %@ ]",cached, _ip, _timeout, ips];
+}
+
+- (instancetype)copyWithZone:(NSZone *)zone {
+    HTTPDNSRecord *copy = [[[self class] allocWithZone:zone] init:_ips timeout:_timeout];
+    return copy;
 }
 
 @end
