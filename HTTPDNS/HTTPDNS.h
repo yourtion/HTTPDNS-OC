@@ -18,5 +18,3 @@ FOUNDATION_EXPORT const unsigned char HTTPDNSVersionString[];
 
 #import "HTTPDNSBase.h"
 #import "HTTPDNSFactory.h"
-
-

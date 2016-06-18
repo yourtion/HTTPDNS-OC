@@ -7,6 +7,8 @@
 //
 
 #import "HTTPDNSUtil.h"
+#import "HTTPDNSHex.h"
+#import "HTTPDNSCryptor.h"
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
@@ -38,6 +40,28 @@
 
 + (int)getSecondTimestamp {
     return (int)[[NSDate date] timeIntervalSince1970] * 1000;
+}
+
++ (NSString *)encrypt:(NSString *)domain withCryptor:(HTTPDNSCryptor *)cryptor {
+    NSData *data = [cryptor encrypt:[domain dataUsingEncoding:NSUTF8StringEncoding]];
+    if (data == nil) {
+        return nil;
+    }
+    NSString *str = [HTTPDNSHex encodeHexData:data];
+    return str;
+}
+
++ (NSString *)decrypt:(NSData *)raw withCryptor:(HTTPDNSCryptor *)cryptor {
+    NSData *enc = [HTTPDNSHex decodeHexString:[[NSString alloc] initWithData:raw
+                                                               encoding:NSUTF8StringEncoding]];
+    if (enc == nil) {
+        return nil;
+    }
+    NSData *data = [cryptor decrpyt:enc];
+    if (data == nil) {
+        return nil;
+    }
+    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
 @end

@@ -37,6 +37,14 @@
 		CBD4EBB31D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */; };
 		CBD4EBB41D0D0CBA006FFD74 /* HTTPDNSDNSPod.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */; };
 		CBD4EBB51D0D0CBA006FFD74 /* HTTPDNSDNSPod.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */; };
+		CBEF15791D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */; };
+		CBEF157A1D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */; };
+		CBEF157B1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */; };
+		CBEF157C1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */; };
+		CBEF157F1D1537100028B2B1 /* HTTPDNSHex.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF157D1D1537100028B2B1 /* HTTPDNSHex.h */; };
+		CBEF15801D1537100028B2B1 /* HTTPDNSHex.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF157D1D1537100028B2B1 /* HTTPDNSHex.h */; };
+		CBEF15811D1537100028B2B1 /* HTTPDNSHex.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF157E1D1537100028B2B1 /* HTTPDNSHex.m */; };
+		CBEF15821D1537100028B2B1 /* HTTPDNSHex.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF157E1D1537100028B2B1 /* HTTPDNSHex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +66,10 @@
 		CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSBase.m; sourceTree = "<group>"; };
 		CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSDNSPod.h; sourceTree = "<group>"; };
 		CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSDNSPod.m; sourceTree = "<group>"; };
+		CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSCryptor.h; sourceTree = "<group>"; };
+		CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSCryptor.m; sourceTree = "<group>"; };
+		CBEF157D1D1537100028B2B1 /* HTTPDNSHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSHex.h; sourceTree = "<group>"; };
+		CBEF157E1D1537100028B2B1 /* HTTPDNSHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSHex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,10 @@
 			children = (
 				CB65B29E1D053E7C00434C3A /* HTTPDNSUtil.h */,
 				CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */,
+				CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */,
+				CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */,
+				CBEF157D1D1537100028B2B1 /* HTTPDNSHex.h */,
+				CBEF157E1D1537100028B2B1 /* HTTPDNSHex.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -146,9 +162,11 @@
 				CBD4EBB31D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CB14D4D71D095A4A00EB35C9 /* HTTPDNSRecord.h in Headers */,
 				CB14CB5B1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
-				CBD4EBAF1D0D08C1006FFD74 /* HTTPDNSFactory.h in Headers */,
-				CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
+				CBEF157A1D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */,
 				CB14D4DB1D095A6900EB35C9 /* HTTPDNSUtil.h in Headers */,
+				CBD4EBAF1D0D08C1006FFD74 /* HTTPDNSFactory.h in Headers */,
+				CBEF15801D1537100028B2B1 /* HTTPDNSHex.h in Headers */,
+				CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +180,8 @@
 				CB65B29C1D053E5300434C3A /* HTTPDNSClient.h in Headers */,
 				CB14CB5A1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
 				CBD4EBA61D0D0487006FFD74 /* HTTPDNSFactory.h in Headers */,
+				CBEF157F1D1537100028B2B1 /* HTTPDNSHex.h in Headers */,
+				CBEF15791D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */,
 				CB65B2A01D053E7C00434C3A /* HTTPDNSUtil.h in Headers */,
 				CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
 			);
@@ -266,6 +286,8 @@
 				CBD4EBAE1D0D08BB006FFD74 /* HTTPDNSFactory.m in Sources */,
 				CBD4EBAD1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */,
 				CB14D4D81D095A5800EB35C9 /* HTTPDNSClient.m in Sources */,
+				CBEF157C1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */,
+				CBEF15821D1537100028B2B1 /* HTTPDNSHex.m in Sources */,
 				CB14D4D91D095A5800EB35C9 /* HTTPDNSUtil.m in Sources */,
 				CB14D4DA1D095A5800EB35C9 /* HTTPDNSRecord.m in Sources */,
 				CB14CB5D1D0FAEC20077903F /* HTTPDNSAliYun.m in Sources */,
@@ -280,6 +302,8 @@
 				CBD4EBA71D0D0487006FFD74 /* HTTPDNSFactory.m in Sources */,
 				CB65B29D1D053E5300434C3A /* HTTPDNSClient.m in Sources */,
 				CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */,
+				CBEF157B1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */,
+				CBEF15811D1537100028B2B1 /* HTTPDNSHex.m in Sources */,
 				CB65B2A11D053E7C00434C3A /* HTTPDNSUtil.m in Sources */,
 				CBD4EBAC1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */,
 				CB14CB5C1D0FAEC20077903F /* HTTPDNSAliYun.m in Sources */,
