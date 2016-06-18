@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB14CB5A1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */ = {isa = PBXBuildFile; fileRef = CB14CB581D0FAEC20077903F /* HTTPDNSAliYun.h */; };
+		CB14CB5B1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */ = {isa = PBXBuildFile; fileRef = CB14CB581D0FAEC20077903F /* HTTPDNSAliYun.h */; };
+		CB14CB5C1D0FAEC20077903F /* HTTPDNSAliYun.m in Sources */ = {isa = PBXBuildFile; fileRef = CB14CB591D0FAEC20077903F /* HTTPDNSAliYun.m */; };
+		CB14CB5D1D0FAEC20077903F /* HTTPDNSAliYun.m in Sources */ = {isa = PBXBuildFile; fileRef = CB14CB591D0FAEC20077903F /* HTTPDNSAliYun.m */; };
 		CB14D4D51D095A4A00EB35C9 /* HTTPDNS.h in Headers */ = {isa = PBXBuildFile; fileRef = CB45C1F01CA809D30018439A /* HTTPDNS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB14D4D61D095A4A00EB35C9 /* HTTPDNSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B29A1D053E5300434C3A /* HTTPDNSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB14D4D71D095A4A00EB35C9 /* HTTPDNSRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB14CB581D0FAEC20077903F /* HTTPDNSAliYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSAliYun.h; sourceTree = "<group>"; };
+		CB14CB591D0FAEC20077903F /* HTTPDNSAliYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSAliYun.m; sourceTree = "<group>"; };
 		CB14D4CD1D095A0000EB35C9 /* HTTPDNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPDNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB45C1ED1CA809D30018439A /* HTTPDNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPDNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB45C1F01CA809D30018439A /* HTTPDNS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPDNS.h; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 				CB45C1F21CA809D30018439A /* Info.plist */,
 				CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */,
 				CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */,
+				CB14CB581D0FAEC20077903F /* HTTPDNSAliYun.h */,
+				CB14CB591D0FAEC20077903F /* HTTPDNSAliYun.m */,
 				CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */,
 				CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */,
 				CBD4EBA41D0D0487006FFD74 /* HTTPDNSFactory.h */,
@@ -121,6 +129,7 @@
 				CB14D4D61D095A4A00EB35C9 /* HTTPDNSClient.h in Headers */,
 				CBD4EBB31D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CB14D4D71D095A4A00EB35C9 /* HTTPDNSRecord.h in Headers */,
+				CB14CB5B1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
 				CBD4EBAF1D0D08C1006FFD74 /* HTTPDNSFactory.h in Headers */,
 				CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
 				CB14D4DB1D095A6900EB35C9 /* HTTPDNSUtil.h in Headers */,
@@ -135,6 +144,7 @@
 				CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */,
 				CBD4EBB21D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CB65B29C1D053E5300434C3A /* HTTPDNSClient.h in Headers */,
+				CB14CB5A1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
 				CBD4EBA61D0D0487006FFD74 /* HTTPDNSFactory.h in Headers */,
 				CB65B2A01D053E7C00434C3A /* HTTPDNSUtil.h in Headers */,
 				CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
@@ -242,6 +252,7 @@
 				CB14D4D81D095A5800EB35C9 /* HTTPDNSClient.m in Sources */,
 				CB14D4D91D095A5800EB35C9 /* HTTPDNSUtil.m in Sources */,
 				CB14D4DA1D095A5800EB35C9 /* HTTPDNSRecord.m in Sources */,
+				CB14CB5D1D0FAEC20077903F /* HTTPDNSAliYun.m in Sources */,
 				CBD4EBB51D0D0CBA006FFD74 /* HTTPDNSDNSPod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +266,7 @@
 				CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */,
 				CB65B2A11D053E7C00434C3A /* HTTPDNSUtil.m in Sources */,
 				CBD4EBAC1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */,
+				CB14CB5C1D0FAEC20077903F /* HTTPDNSAliYun.m in Sources */,
 				CBD4EBB41D0D0CBA006FFD74 /* HTTPDNSDNSPod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

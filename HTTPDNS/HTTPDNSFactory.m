@@ -8,6 +8,7 @@
 
 #import "HTTPDNSFactory.h"
 #import "HTTPDNSDNSPod.h"
+#import "HTTPDNSAliYun.h"
 
 @implementation HTTPDNSFactory
 
@@ -16,11 +17,11 @@
 }
 
 + (HTTPDNSBase *)getAliYun{
-    return [HTTPDNSFactory getAliYunWithKey:@"100000"];
+    return [[HTTPDNSAliYun alloc] init];
 }
 
 + (HTTPDNSBase *)getAliYunWithKey:(NSString *)key{
-    return nil;
+    return [[HTTPDNSAliYun alloc] initWithAccountId:key];
 }
 
 @end

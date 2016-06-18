@@ -15,8 +15,8 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    HTTPDNSBase *dns = [HTTPDNSFactory getDNSPod];
-    HTTPDNSRecord *res =  [dns requsetRecordSync:@"qq.com"];
+    HTTPDNSBase *dns = [HTTPDNSFactory getAliYun];
+    HTTPDNSRecord *res =  [dns requsetRecordSync:@"www.taobao.com"];
     NSLog(@"%@", res.description);
 }
 
