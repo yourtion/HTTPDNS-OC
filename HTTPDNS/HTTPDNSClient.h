@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HTTPDNSBase.h"
 
 @interface HTTPDNSClient : NSObject
+
+- (void)cleanAllCache;
+
+- (void)useDNSPod;
+- (void)useAliYunWithKey:(NSString *)key;
+- (void)useDNSPodProWithAccount:(NSString *)account Key:(NSString *)key;
+
+- (void)getRecord:(NSString *)domain callback:(HTTPDNSCallback)callback;
 
 @end

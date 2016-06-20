@@ -15,9 +15,10 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    HTTPDNSBase *dns = [HTTPDNSFactory getAliYun];
-    HTTPDNSRecord *res =  [dns requsetRecordSync:@"www.taobao.com"];
-    NSLog(@"%@", res.description);
+    HTTPDNSClient *dns = [[HTTPDNSClient alloc] init];
+    [dns getRecord:@"www.taobao.com" callback:^(HTTPDNSRecord *record) {
+        NSLog(@"%@", record.description);
+    }];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
