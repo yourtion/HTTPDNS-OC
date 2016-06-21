@@ -15,6 +15,9 @@
 }
 
 - (instancetype)initWithKey:(NSString *)key {
+    if (!key || [key isEqualToString:@""]) {
+        return nil;
+    }
     if (self = [super init]) {
         _key = [key dataUsingEncoding:NSUTF8StringEncoding];
     }

@@ -43,6 +43,7 @@
 }
 
 + (NSString *)encrypt:(NSString *)domain withCryptor:(HTTPDNSCryptor *)cryptor {
+    if (!domain || !cryptor) return nil;
     NSData *data = [cryptor encrypt:[domain dataUsingEncoding:NSUTF8StringEncoding]];
     if (data == nil) {
         return nil;
@@ -52,6 +53,7 @@
 }
 
 + (NSString *)decrypt:(NSData *)raw withCryptor:(HTTPDNSCryptor *)cryptor {
+    if (!raw || !cryptor) return nil;
     NSData *enc = [HTTPDNSHex decodeHexString:[[NSString alloc] initWithData:raw
                                                                encoding:NSUTF8StringEncoding]];
     if (enc == nil) {
