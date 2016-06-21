@@ -6,7 +6,7 @@ env:
     - WORKSPACE=HTTPDNS.xcworkspace
     - IOS_SCHEME=HTTPDNS_iOS
     - OSX_SCHEME=HTTPDNS_OSX
-    - SDK=iphonesimulator9.3
+    - IOS_SDK=iphonesimulator9.3
     - OSX_SDK=macosx10.11
     - CONFIG="ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES"
   matrix:
