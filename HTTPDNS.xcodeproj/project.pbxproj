@@ -25,10 +25,6 @@
 		CB65B2A11D053E7C00434C3A /* HTTPDNSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */; };
 		CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */; };
-		CB7E829A1D15AED100767E10 /* HTTPDNSDNSPodPro.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7E82981D15AED100767E10 /* HTTPDNSDNSPodPro.h */; };
-		CB7E829B1D15AED100767E10 /* HTTPDNSDNSPodPro.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7E82981D15AED100767E10 /* HTTPDNSDNSPodPro.h */; };
-		CB7E829C1D15AED100767E10 /* HTTPDNSDNSPodPro.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82991D15AED100767E10 /* HTTPDNSDNSPodPro.m */; };
-		CB7E829D1D15AED100767E10 /* HTTPDNSDNSPodPro.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82991D15AED100767E10 /* HTTPDNSDNSPodPro.m */; };
 		CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */; };
 		CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBD4EBAC1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */; };
@@ -60,8 +56,6 @@
 		CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSUtil.m; sourceTree = "<group>"; };
 		CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSRecord.h; sourceTree = "<group>"; };
 		CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSRecord.m; sourceTree = "<group>"; };
-		CB7E82981D15AED100767E10 /* HTTPDNSDNSPodPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSDNSPodPro.h; sourceTree = "<group>"; };
-		CB7E82991D15AED100767E10 /* HTTPDNSDNSPodPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSDNSPodPro.m; sourceTree = "<group>"; };
 		CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSBase.h; sourceTree = "<group>"; };
 		CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSBase.m; sourceTree = "<group>"; };
 		CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSDNSPod.h; sourceTree = "<group>"; };
@@ -131,8 +125,6 @@
 				CB14CB591D0FAEC20077903F /* HTTPDNSAliYun.m */,
 				CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */,
 				CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */,
-				CB7E82981D15AED100767E10 /* HTTPDNSDNSPodPro.h */,
-				CB7E82991D15AED100767E10 /* HTTPDNSDNSPodPro.m */,
 			);
 			name = Provider;
 			sourceTree = "<group>";
@@ -166,7 +158,6 @@
 				CB14D4DB1D095A6900EB35C9 /* HTTPDNSUtil.h in Headers */,
 				CBEF15801D1537100028B2B1 /* HTTPDNSHex.h in Headers */,
 				CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
-				CB7E829B1D15AED100767E10 /* HTTPDNSDNSPodPro.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +174,6 @@
 				CBEF15791D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */,
 				CB65B2A01D053E7C00434C3A /* HTTPDNSUtil.h in Headers */,
 				CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
-				CB7E829A1D15AED100767E10 /* HTTPDNSDNSPodPro.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7E829D1D15AED100767E10 /* HTTPDNSDNSPodPro.m in Sources */,
 				CBD4EBAD1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */,
 				CB14D4D81D095A5800EB35C9 /* HTTPDNSClient.m in Sources */,
 				CBEF157C1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */,
@@ -299,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7E829C1D15AED100767E10 /* HTTPDNSDNSPodPro.m in Sources */,
 				CB65B29D1D053E5300434C3A /* HTTPDNSClient.m in Sources */,
 				CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */,
 				CBEF157B1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */,

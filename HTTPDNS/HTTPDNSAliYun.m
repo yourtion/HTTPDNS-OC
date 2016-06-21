@@ -13,11 +13,6 @@
     NSString *_accountId;
 }
 
-- (instancetype)init
-{
-    return [self initWithAccountId:@"100000"];
-}
-
 - (instancetype)initWithAccountId:(NSString *)account
 {
     self = [super init];
@@ -34,9 +29,15 @@
 -(HTTPDNSRecord *)parseResult:(NSData *)data {
     NSError *jsonError;
     NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
+    if (jsonError) {
+        return nil;
+    }
     NSArray *ipArray = [jsonDic objectForKey:@"ips"];
     int ttl = [[jsonDic objectForKey:@"ttl"] intValue];
-    return [[HTTPDNSRecord alloc] init:ipArray ttl:ttl];
+    if (ipArray && ttl) {
+        return [[HTTPDNSRecord alloc] init:ipArray ttl:ttl];
+    }
+    return nil;
 }
 
 @end

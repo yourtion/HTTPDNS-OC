@@ -11,4 +11,6 @@
 
 @interface HTTPDNSDNSPod : HTTPDNSBase<HTTPDNSBaseProtocol>
 
+- (instancetype)initWithAccountId:(NSString *)account andKey:(NSString *)key;
+
 @end

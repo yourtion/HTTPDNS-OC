@@ -10,7 +10,6 @@
 #import "HTTPDNSUtil.h"
 #import "HTTPDNSDNSPod.h"
 #import "HTTPDNSAliYun.h"
-#import "HTTPDNSDNSPodPro.h"
 
 @implementation HTTPDNSClient
 {
@@ -46,7 +45,7 @@
 - (void)useDNSPodProWithAccount:(NSString *)account Key:(NSString *)key {
     if (account && key) {
         [self cleanAllCache];
-        _provider = [[HTTPDNSDNSPodPro alloc] initWithAccountId:account andKey:key];
+        _provider = [[HTTPDNSDNSPod alloc] initWithAccountId:account andKey:key];
     }
 }
 
