@@ -1,0 +1,24 @@
+language: objective-c
+osx_image: xcode7.3
+
+env:
+  global:
+    - WORKSPACE=HTTPDNS.xcworkspace
+    - IOS_SCHEME=HTTPDNS_iOS
+    - OSX_SCHEME=HTTPDNS_OSX
+    - SDK=iphonesimulator
+    - OSX_SDK=macosx
+    - CONFIG="ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES"
+  matrix:
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=8.1,name=iPhone 4S"
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=8.2,name=iPhone 5"
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=8.3,name=iPhone 5S"
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=8.4,name=iPhone 6"
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=9.0,name=iPhone 6"
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=9.1,name=iPhone 6 Plus"
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=9.2,name=iPhone 6S"
+    - SCHEME="$IOS_SCHEME"  SDK="$IOS_SDK" DESTINATION="OS=9.3,name=iPhone 6S Plus"
+    - SCHEME="$OSX_SCHEME"  SDK="$OSX_SDK" DESTINATION="arch=x86_64"
+
+script:
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration $CONFIG test | xcpretty -c;

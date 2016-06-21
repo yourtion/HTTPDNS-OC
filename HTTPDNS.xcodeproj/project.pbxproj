@@ -25,6 +25,11 @@
 		CB65B2A11D053E7C00434C3A /* HTTPDNSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */; };
 		CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */; };
+		CB7E82C31D1786A700767E10 /* HTTPDNSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */; };
+		CB7E82C51D1786A700767E10 /* HTTPDNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB45C1ED1CA809D30018439A /* HTTPDNS.framework */; };
+		CB7E82D41D1786CB00767E10 /* HTTPDNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14D4CD1D095A0000EB35C9 /* HTTPDNS.framework */; };
+		CB7E82DB1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */; };
+		CB7E82DC1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */; };
 		CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */; };
 		CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBD4EBAC1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */; };
@@ -43,6 +48,23 @@
 		CBEF15821D1537100028B2B1 /* HTTPDNSHex.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF157E1D1537100028B2B1 /* HTTPDNSHex.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CB7E82C61D1786A700767E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB45C1E41CA809D30018439A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB45C1EC1CA809D30018439A;
+			remoteInfo = HTTPDNS_iOS;
+		};
+		CB7E82D51D1786CB00767E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB45C1E41CA809D30018439A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB14D4CC1D095A0000EB35C9;
+			remoteInfo = HTTPDNS_OSX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CB14CB581D0FAEC20077903F /* HTTPDNSAliYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSAliYun.h; sourceTree = "<group>"; };
 		CB14CB591D0FAEC20077903F /* HTTPDNSAliYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSAliYun.m; sourceTree = "<group>"; };
@@ -56,6 +78,11 @@
 		CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSUtil.m; sourceTree = "<group>"; };
 		CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSRecord.h; sourceTree = "<group>"; };
 		CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSRecord.m; sourceTree = "<group>"; };
+		CB7E82C01D1786A700767E10 /* HTTPDNSTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPDNSTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSTests.m; sourceTree = "<group>"; };
+		CB7E82C41D1786A700767E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7E82CF1D1786CB00767E10 /* HTTPDNSTests_OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPDNSTests_OSX.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSUtilTest.m; sourceTree = "<group>"; };
 		CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSBase.h; sourceTree = "<group>"; };
 		CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSBase.m; sourceTree = "<group>"; };
 		CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSDNSPod.h; sourceTree = "<group>"; };
@@ -81,6 +108,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB7E82BD1D1786A700767E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E82C51D1786A700767E10 /* HTTPDNS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7E82CC1D1786CB00767E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E82D41D1786CB00767E10 /* HTTPDNS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				CB45C1EF1CA809D30018439A /* HTTPDNS */,
+				CB7E82C11D1786A700767E10 /* HTTPDNSTests */,
 				CB45C1EE1CA809D30018439A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +141,8 @@
 			children = (
 				CB45C1ED1CA809D30018439A /* HTTPDNS.framework */,
 				CB14D4CD1D095A0000EB35C9 /* HTTPDNS.framework */,
+				CB7E82C01D1786A700767E10 /* HTTPDNSTests_iOS.xctest */,
+				CB7E82CF1D1786CB00767E10 /* HTTPDNSTests_OSX.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +160,16 @@
 				CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */,
 			);
 			path = HTTPDNS;
+			sourceTree = "<group>";
+		};
+		CB7E82C11D1786A700767E10 /* HTTPDNSTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */,
+				CB7E82C41D1786A700767E10 /* Info.plist */,
+				CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */,
+			);
+			path = HTTPDNSTests;
 			sourceTree = "<group>";
 		};
 		CBEF15751D1532160028B2B1 /* Provider */ = {
@@ -216,6 +272,42 @@
 			productReference = CB45C1ED1CA809D30018439A /* HTTPDNS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CB7E82BF1D1786A700767E10 /* HTTPDNSTests_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7E82CA1D1786A700767E10 /* Build configuration list for PBXNativeTarget "HTTPDNSTests_iOS" */;
+			buildPhases = (
+				CB7E82BC1D1786A700767E10 /* Sources */,
+				CB7E82BD1D1786A700767E10 /* Frameworks */,
+				CB7E82BE1D1786A700767E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB7E82C71D1786A700767E10 /* PBXTargetDependency */,
+			);
+			name = HTTPDNSTests_iOS;
+			productName = HTTPDNSTests;
+			productReference = CB7E82C01D1786A700767E10 /* HTTPDNSTests_iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB7E82CE1D1786CB00767E10 /* HTTPDNSTests_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7E82D71D1786CB00767E10 /* Build configuration list for PBXNativeTarget "HTTPDNSTests_OSX" */;
+			buildPhases = (
+				CB7E82CB1D1786CB00767E10 /* Sources */,
+				CB7E82CC1D1786CB00767E10 /* Frameworks */,
+				CB7E82CD1D1786CB00767E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB7E82D61D1786CB00767E10 /* PBXTargetDependency */,
+			);
+			name = HTTPDNSTests_OSX;
+			productName = HTTPDNSTests;
+			productReference = CB7E82CF1D1786CB00767E10 /* HTTPDNSTests_OSX.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,6 +322,12 @@
 					};
 					CB45C1EC1CA809D30018439A = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					CB7E82BF1D1786A700767E10 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CB7E82CE1D1786CB00767E10 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -247,6 +345,8 @@
 			targets = (
 				CB45C1EC1CA809D30018439A /* HTTPDNS_iOS */,
 				CB14D4CC1D095A0000EB35C9 /* HTTPDNS_OSX */,
+				CB7E82BF1D1786A700767E10 /* HTTPDNSTests_iOS */,
+				CB7E82CE1D1786CB00767E10 /* HTTPDNSTests_OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +360,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CB45C1EB1CA809D30018439A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7E82BE1D1786A700767E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7E82CD1D1786CB00767E10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +413,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB7E82BC1D1786A700767E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E82C31D1786A700767E10 /* HTTPDNSTests.m in Sources */,
+				CB7E82DB1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7E82CB1D1786CB00767E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7E82DC1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB7E82C71D1786A700767E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB45C1EC1CA809D30018439A /* HTTPDNS_iOS */;
+			targetProxy = CB7E82C61D1786A700767E10 /* PBXContainerItemProxy */;
+		};
+		CB7E82D61D1786CB00767E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB14D4CC1D095A0000EB35C9 /* HTTPDNS_OSX */;
+			targetProxy = CB7E82D51D1786CB00767E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CB14D4D31D095A0000EB35C9 /* Debug */ = {
@@ -468,6 +612,54 @@
 			};
 			name = Release;
 		};
+		CB7E82C81D1786A700767E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HTTPDNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB7E82C91D1786A700767E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HTTPDNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB7E82D81D1786CB00767E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HTTPDNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CB7E82D91D1786CB00767E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HTTPDNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.HTTPDNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -497,6 +689,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CB7E82CA1D1786A700767E10 /* Build configuration list for PBXNativeTarget "HTTPDNSTests_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7E82C81D1786A700767E10 /* Debug */,
+				CB7E82C91D1786A700767E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB7E82D71D1786CB00767E10 /* Build configuration list for PBXNativeTarget "HTTPDNSTests_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7E82D81D1786CB00767E10 /* Debug */,
+				CB7E82D91D1786CB00767E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
