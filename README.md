@@ -1,5 +1,11 @@
 # HTTPDNS
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/cocoapods/v/HTTPDNS.svg?style=flat)](http://cocoapods.org/pods/HTTPDNS)
+[![License](https://img.shields.io/cocoapods/l/HTTPDNS.svg?style=flat)](http://cocoapods.org/pods/HTTPDNS)
+[![Platform](https://img.shields.io/cocoapods/p/HTTPDNS.svg?style=flat)](http://cocoapods.org/pods/HTTPDNS)
+[![Build Status](https://travis-ci.org/yourtion/HTTPDNS.svg?branch=master)](https://travis-ci.org/yourtion/HTTPDNS)
+
 HTTPDNS 库 Objdctive-C 实现。
 
 支持 DNSPod、DNSPod 企业版、AliYunDNS 等（方便扩展）
