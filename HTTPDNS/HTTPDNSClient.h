@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HTTPDNSBase.h"
+#import "HTTPDNSRecord.h"
 
 @interface HTTPDNSClient : NSObject
 

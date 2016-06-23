@@ -20,8 +20,6 @@ const static NSString *kHTTPDNS_ALIYUN_SERVER_ADDRESS = @"http://203.107.1.1/";
 
 @end
 
-typedef void(^HTTPDNSCallback)(HTTPDNSRecord *record);
-
 @interface HTTPDNSBase : NSObject  <HTTPDNSBaseProtocol>
 
 - (void)requsetRecord:(NSString *)domain callback:(HTTPDNSCallback)callback;

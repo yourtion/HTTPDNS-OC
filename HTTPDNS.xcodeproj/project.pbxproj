@@ -31,7 +31,7 @@
 		CB7E82DB1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */; };
 		CB7E82DC1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */; };
 		CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */; };
-		CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBA81D0D08AC006FFD74 /* HTTPDNSBase.h */; };
 		CBD4EBAC1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */; };
 		CBD4EBAD1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */; };
 		CBD4EBB21D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */; };
@@ -215,13 +215,13 @@
 			files = (
 				CB14D4D51D095A4A00EB35C9 /* HTTPDNS.h in Headers */,
 				CB14D4D61D095A4A00EB35C9 /* HTTPDNSClient.h in Headers */,
-				CBD4EBB31D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CB14D4D71D095A4A00EB35C9 /* HTTPDNSRecord.h in Headers */,
+				CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
 				CB14CB5B1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
+				CBD4EBB31D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CBEF157A1D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */,
 				CB14D4DB1D095A6900EB35C9 /* HTTPDNSUtil.h in Headers */,
 				CBEF15801D1537100028B2B1 /* HTTPDNSHex.h in Headers */,
-				CBD4EBAB1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,14 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB45C1F11CA809D30018439A /* HTTPDNS.h in Headers */,
-				CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */,
-				CBD4EBB21D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CB65B29C1D053E5300434C3A /* HTTPDNSClient.h in Headers */,
+				CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
+				CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */,
 				CB14CB5A1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
+				CBD4EBB21D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CBEF157F1D1537100028B2B1 /* HTTPDNSHex.h in Headers */,
 				CBEF15791D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */,
 				CB65B2A01D053E7C00434C3A /* HTTPDNSUtil.h in Headers */,
-				CBD4EBAA1D0D08AC006FFD74 /* HTTPDNSBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

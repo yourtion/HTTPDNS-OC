@@ -20,3 +20,5 @@
 - (NSString *)description;
 
 @end
+
+typedef void(^HTTPDNSCallback)(HTTPDNSRecord *record);
