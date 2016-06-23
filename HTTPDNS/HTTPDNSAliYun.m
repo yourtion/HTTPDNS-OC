@@ -23,7 +23,7 @@
 }
 
 -(NSString *)getRequestString:(NSString *)domain {
-    return [NSString stringWithFormat:@"%@/%@/d?host=%@",kHTTPDNS_ALIYUN_SERVER_ADDRESS, _accountId, domain];
+    return [NSString stringWithFormat:@"%@%@/d?host=%@",kHTTPDNS_ALIYUN_SERVER_ADDRESS, _accountId, domain];
 }
 
 -(HTTPDNSRecord *)parseResult:(NSData *)data {

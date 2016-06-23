@@ -38,6 +38,10 @@
 		CBD4EBB31D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */; };
 		CBD4EBB41D0D0CBA006FFD74 /* HTTPDNSDNSPod.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */; };
 		CBD4EBB51D0D0CBA006FFD74 /* HTTPDNSDNSPod.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */; };
+		CBDFBC751D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */; };
+		CBDFBC761D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */; };
+		CBDFBC781D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */; };
+		CBDFBC791D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */; };
 		CBEF15791D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */; };
 		CBEF157A1D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */; };
 		CBEF157B1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */; };
@@ -87,6 +91,8 @@
 		CBD4EBA91D0D08AC006FFD74 /* HTTPDNSBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSBase.m; sourceTree = "<group>"; };
 		CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSDNSPod.h; sourceTree = "<group>"; };
 		CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSDNSPod.m; sourceTree = "<group>"; };
+		CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSDNSPodTest.m; sourceTree = "<group>"; };
+		CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSAliYunTest.m; sourceTree = "<group>"; };
 		CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSCryptor.h; sourceTree = "<group>"; };
 		CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSCryptor.m; sourceTree = "<group>"; };
 		CBEF157D1D1537100028B2B1 /* HTTPDNSHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSHex.h; sourceTree = "<group>"; };
@@ -165,9 +171,11 @@
 		CB7E82C11D1786A700767E10 /* HTTPDNSTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */,
 				CB7E82C41D1786A700767E10 /* Info.plist */,
+				CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */,
 				CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */,
+				CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */,
+				CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */,
 			);
 			path = HTTPDNSTests;
 			sourceTree = "<group>";
@@ -418,6 +426,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7E82C31D1786A700767E10 /* HTTPDNSTests.m in Sources */,
+				CBDFBC781D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */,
+				CBDFBC751D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */,
 				CB7E82DB1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +437,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7E82DC1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */,
+				CBDFBC761D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */,
+				CBDFBC791D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
