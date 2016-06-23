@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/HTTPDNS.svg?style=flat)](http://cocoapods.org/pods/HTTPDNS)
 [![License](https://img.shields.io/cocoapods/l/HTTPDNS.svg?style=flat)](http://cocoapods.org/pods/HTTPDNS)
 [![Platform](https://img.shields.io/cocoapods/p/HTTPDNS.svg?style=flat)](http://cocoapods.org/pods/HTTPDNS)
-[![Build Status](https://travis-ci.org/yourtion/HTTPDNS.svg?branch=master)](https://travis-ci.org/yourtion/HTTPDNS)
+[![Build Status](https://travis-ci.org/yourtion/HTTPDNS-OC.svg?branch=master)](https://travis-ci.org/yourtion/HTTPDNS-OC)
 
 HTTPDNS 库 Objdctive-C 实现。
 
