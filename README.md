@@ -10,12 +10,61 @@ HTTPDNS 库 Objdctive-C 实现。
 
 支持 DNSPod、DNSPod 企业版、AliYunDNS 等（方便扩展）
 
+## 安装
+
+### CocoaPod
+
+在 `Podfile` 中添加：
+
+```
+platform :ios, '8.0'
+
+pod 'HTTPDNS'
+```
+
+### Carthage
+
+```
+github "yourtion/HTTPDNS-OC"
+```
+
+## 使用方法
+
+### 解析域名
+
+```objc
+#import <HTTPDNS/HTTPDNS.h>
+
+// 初始化客户端
+HTTPDNSClient *dns = [[HTTPDNSClient alloc] init];
+
+// 解析记录
+[dns getRecord:@"www.taobao.com" callback:^(HTTPDNSRecord *record) {
+	NSLog(@"IP : %@", record.ip);
+   NSLog(@"description : %@", record.description);
+}];
+
+// 清除缓存
+[dns cleanAllCache];
+```
+
+### 切换 HTTPDNS 服务提供方
+
+```objc
+// 使用 DNSPod
+[dns useDNSPod];
+
+// 使用 DNSPod 企业版
+[dns useDNSPodProWithAccount:@"Your DNSPod pro accound id" Key:@"Your DNSPod pro key"];
+
+// 使用阿里云 HTTPDNS
+[dns useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
+```
+
 ## TODO
 
 - [x] 实现 DNSPod 免费版功能
 - [x] 实现 DNSPod 企业版功能（认证接入）
 - [x] 实现AliYun HTTPDNS
-- [ ] 自动转换 `URLRequest`
 - [ ] 提供同步获取方法
-- [ ] 允许在初始化时关闭缓存
 - [x] 提供清除缓存方法
