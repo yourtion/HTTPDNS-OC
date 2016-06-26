@@ -10,6 +10,7 @@
 #import "HTTPDNSCryptor.h"
 
 @interface HTTPDNSUtil : NSObject
+
 + (BOOL)isHTTPEnable;
 + (int)getSecondTimestamp;
 
