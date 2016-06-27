@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "HTTPDNSAliYun.h"
-#import "HTTPDNSUtil.h"
 
 @interface HTTPDNSAliYunTest : XCTestCase
 
@@ -43,7 +42,7 @@ static NSString *account = @"GYX";
     XCTAssertEqualObjects(result.ips[0], @"192.243.118.110");
     XCTAssertEqualObjects(result.ips[1], @"192.243.118.111");
     XCTAssertEqualObjects(result.ips[2], @"192.243.118.112");
-    XCTAssertLessThan(result.timeout, [HTTPDNSUtil getSecondTimestamp] + 600 + 1);
+    XCTAssertLessThan(result.timeout, [[NSDate date] timeIntervalSince1970] + 601 * 1000);
 }
 
 @end

@@ -25,7 +25,6 @@
 		CB65B2A11D053E7C00434C3A /* HTTPDNSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B29F1D053E7C00434C3A /* HTTPDNSUtil.m */; };
 		CB65B2A51D05424600434C3A /* HTTPDNSRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */; };
-		CB7E82C31D1786A700767E10 /* HTTPDNSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */; };
 		CB7E82C51D1786A700767E10 /* HTTPDNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB45C1ED1CA809D30018439A /* HTTPDNS.framework */; };
 		CB7E82D41D1786CB00767E10 /* HTTPDNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB14D4CD1D095A0000EB35C9 /* HTTPDNS.framework */; };
 		CB7E82DB1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */; };
@@ -83,7 +82,6 @@
 		CB65B2A31D05424600434C3A /* HTTPDNSRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSRecord.h; sourceTree = "<group>"; };
 		CB65B2A41D05424600434C3A /* HTTPDNSRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSRecord.m; sourceTree = "<group>"; };
 		CB7E82C01D1786A700767E10 /* HTTPDNSTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPDNSTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSTests.m; sourceTree = "<group>"; };
 		CB7E82C41D1786A700767E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7E82CF1D1786CB00767E10 /* HTTPDNSTests_OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPDNSTests_OSX.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSUtilTest.m; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				CB7E82C41D1786A700767E10 /* Info.plist */,
-				CB7E82C21D1786A700767E10 /* HTTPDNSTests.m */,
 				CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */,
 				CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */,
 				CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */,
@@ -425,7 +422,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7E82C31D1786A700767E10 /* HTTPDNSTests.m in Sources */,
 				CBDFBC781D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */,
 				CBDFBC751D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */,
 				CB7E82DB1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */,

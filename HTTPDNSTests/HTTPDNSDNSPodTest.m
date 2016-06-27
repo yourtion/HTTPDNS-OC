@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "HTTPDNSDNSPod.h"
-#import "HTTPDNSUtil.h"
 
 @interface HTTPDNSDNSPodTest : XCTestCase
 
@@ -49,7 +48,7 @@ static NSString *key = @"yourtion";
     XCTAssertEqualObjects(result.ips[0], @"192.243.118.110");
     XCTAssertEqualObjects(result.ips[1], @"192.243.118.111");
     XCTAssertEqualObjects(result.ips[2], @"192.243.118.112");
-    XCTAssertLessThan(result.timeout, [HTTPDNSUtil getSecondTimestamp] + 600 + 1);
+    XCTAssertLessThan(result.timeout, [[NSDate date] timeIntervalSince1970] + 601 * 1000);
 }
 
 - (void)testParseResultPro {
@@ -61,7 +60,7 @@ static NSString *key = @"yourtion";
     XCTAssertEqualObjects(result.ips[0], @"192.243.118.110");
     XCTAssertEqualObjects(result.ips[1], @"192.243.118.111");
     XCTAssertEqualObjects(result.ips[2], @"192.243.118.112");
-    XCTAssertLessThan(result.timeout, [HTTPDNSUtil getSecondTimestamp] + 600 + 1);
+    XCTAssertLessThan(result.timeout, [[NSDate date] timeIntervalSince1970] + 601 * 1000);
 }
 
 @end
