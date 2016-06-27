@@ -17,7 +17,7 @@
 /// IP array
 @property (nonatomic, readonly) NSArray *ips;
 /// timeout
-@property (nonatomic, readonly) int timeout;
+@property (nonatomic, readonly) NSTimeInterval timeout;
 /// is Cached
 @property (nonatomic, readonly) BOOL cached;
 

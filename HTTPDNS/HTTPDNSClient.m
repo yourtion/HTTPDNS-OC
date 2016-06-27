@@ -53,7 +53,7 @@
     if (![HTTPDNSUtil isHTTPEnable]) return callback(nil);
     HTTPDNSRecord *record = [_cache objectForKey:domain];
     if (record) {
-        if (record.timeout > [HTTPDNSUtil getSecondTimestamp]) {
+        if (record.timeout > [[NSDate date] timeIntervalSince1970]) {
             return callback(record);
         } else {
             [_cache removeObjectForKey:domain];

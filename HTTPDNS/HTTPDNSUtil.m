@@ -38,10 +38,6 @@
     return YES;
 }
 
-+ (int)getSecondTimestamp {
-    return (int)[[NSDate date] timeIntervalSince1970] * 1000;
-}
-
 + (NSString *)encrypt:(NSString *)domain withCryptor:(HTTPDNSCryptor *)cryptor {
     if (!domain || !cryptor) return nil;
     NSData *data = [cryptor encrypt:[domain dataUsingEncoding:NSUTF8StringEncoding]];

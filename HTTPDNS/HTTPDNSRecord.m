@@ -16,14 +16,14 @@
         if ([ips count] > 0) {
             _ip = ips[0];
             _ips = ips;
-            _timeout = ttl + [HTTPDNSUtil getSecondTimestamp];
+            _timeout = ttl * 1000 + [[NSDate date] timeIntervalSince1970];
             _cached = YES;
         }
     }
     return self;
 }
 
-- (instancetype)init:(NSArray *)ips timeout:(int)timeout {
+- (instancetype)init:(NSArray *)ips timeout:(NSTimeInterval)timeout {
     if (self = [super init]) {
         if ([ips count] > 0) {
             _ip = ips[0];
@@ -42,7 +42,7 @@
 - (NSString *)description {
     NSString *cached = _cached ? @"Cached" : @"";
     NSString *ips = [_ips componentsJoinedByString:@" | "];
-    return [NSString stringWithFormat:@"%@ %@ : %d in [ %@ ]",cached, _ip, _timeout, ips];
+    return [NSString stringWithFormat:@"%@ %@ : %f in [ %@ ]",cached, _ip, _timeout, ips];
 }
 
 - (instancetype)copyWithZone:(NSZone *)zone {

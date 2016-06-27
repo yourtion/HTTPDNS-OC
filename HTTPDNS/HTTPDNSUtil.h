@@ -12,7 +12,6 @@
 @interface HTTPDNSUtil : NSObject
 
 + (BOOL)isHTTPEnable;
-+ (int)getSecondTimestamp;
 
 + (NSString *)encrypt:(NSString *)domain withCryptor:(HTTPDNSCryptor *)cryptor;
 + (NSString *)decrypt:(NSData *)raw withCryptor:(HTTPDNSCryptor *)cryptor;
