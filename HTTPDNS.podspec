@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HTTPDNS"
-  s.version      = "0.6.0"
+  s.version      = "0.7.0"
   s.summary      = "Use HTTP to resolve domain ( DNSPod AliYun )"
 
   s.description  = <<-DESC
