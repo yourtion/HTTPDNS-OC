@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name         = "HTTPDNS"
-  s.version      = "0.7.0"
-  s.summary      = "Use HTTP to resolve domain ( DNSPod AliYun )"
+  s.version      = "0.8.0"
+  s.summary      = "Use HTTP to resolve domain ( DNSPod AliYun Google )"
 
   s.description  = <<-DESC
                     HTTPDNS 库 Objective-C 实现。
-                    支持 DNSPod、DNSPod 企业版、AliYunDNS 等（方便扩展）
+                    支持 DNSPod、DNSPod 企业版、AliYunDNS、 Google 等（方便扩展）
                   DESC
 
   s.homepage     = "https://github.com/yourtion/HTTPDNS-OC"

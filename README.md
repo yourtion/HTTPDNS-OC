@@ -8,7 +8,7 @@
 
 HTTPDNS 库 Objdctive-C 实现。
 
-支持 DNSPod、DNSPod 企业版、AliYunDNS 等（方便扩展）
+支持 DNSPod、DNSPod 企业版、AliYunDNS、Google 等（方便扩展）
 
 ## 安装
 
@@ -68,5 +68,5 @@ github "yourtion/HTTPDNS-OC"
 - [x] 实现 AliYun HTTPDNS
 - [x] 实现 AliYun HTTPDNS With HTTPS
 - [x] 实现 Google DNS-over-HTTP
-- [ ] 提供同步获取方法
 - [x] 提供清除缓存方法
+- [ ] 提供自定义解析器方法

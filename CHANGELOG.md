@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+*0.8.0*
+---
+- Add Google DNS-over-HTTP
+- update and add HTTPDNSAliYun HTTPS support
+- use [HTTPDNSClient sharedInstance]
+- update Project
+
 *0.7.0*
 ---
 - add CHANGELOG
