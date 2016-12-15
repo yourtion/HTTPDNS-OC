@@ -30,6 +30,13 @@ static NSString *account = @"GYX";
 
 - (void)testGetRequestString {
     NSString *requestString = [[[HTTPDNSAliYun alloc] initWithAccountId:account] getRequestString:domain];
+    XCTAssertEqualObjects(requestString, @"https://203.107.1.1/GYX/d?host=blog.yourtion.com");
+}
+
+- (void)testGetRequestStringWithoutHTTPS {
+    HTTPDNSAliYun *dns = [[HTTPDNSAliYun alloc] initWithAccountId:account];
+    [dns disableHTTPS];
+    NSString *requestString = [dns getRequestString:domain];
     XCTAssertEqualObjects(requestString, @"http://203.107.1.1/GYX/d?host=blog.yourtion.com");
 }
 

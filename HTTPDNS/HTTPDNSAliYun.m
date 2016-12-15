@@ -11,6 +11,7 @@
 @implementation HTTPDNSAliYun
 {
     NSString *_accountId;
+    NSString *_server;
 }
 
 - (instancetype)initWithAccountId:(NSString *)account
@@ -18,12 +19,17 @@
     self = [super init];
     if (self) {
         _accountId = account;
+        _server = [NSString stringWithFormat:@"https://%@/", kHTTPDNS_ALIYUN_SERVER_ADDRESS];
     }
     return self;
 }
 
+-(void)disableHTTPS {
+    _server = [NSString stringWithFormat:@"http://%@/", kHTTPDNS_ALIYUN_SERVER_ADDRESS];
+}
+
 -(NSString *)getRequestString:(NSString *)domain {
-    return [NSString stringWithFormat:@"%@%@/d?host=%@",kHTTPDNS_ALIYUN_SERVER_ADDRESS, _accountId, domain];
+    return [NSString stringWithFormat:@"%@%@/d?host=%@", _server, _accountId, domain];
 }
 
 -(HTTPDNSRecord *)parseResult:(NSData *)data {

@@ -14,6 +14,7 @@
 {
     BOOL _isEnterprise;
     NSString *_id;
+    NSString *_server;
     HTTPDNSCryptor *_cryptor;
 }
 
@@ -24,6 +25,7 @@
         _isEnterprise = NO;
         _id = nil;
         _cryptor = nil;
+        _server = [NSString stringWithFormat:@"http://%@/", kHTTPDNS_DNSPOD_SERVER_ADDRESS];
     }
     return self;
 }
@@ -35,6 +37,7 @@
         _isEnterprise = YES;
         _id = account;
         _cryptor = [[HTTPDNSCryptor alloc] initWithKey:key];
+        _server = [NSString stringWithFormat:@"http://%@/", kHTTPDNS_DNSPOD_SERVER_ADDRESS];
     }
     return self;
 }
@@ -42,9 +45,9 @@
 -(NSString *)getRequestString:(NSString *)domain {
     if (_isEnterprise) {
         NSString *enc = [HTTPDNSUtil encrypt:domain withCryptor:_cryptor];
-        return  [NSString stringWithFormat:@"%@d?dn=%@&id=%@&ttl=1",kHTTPDNS_DNSPOD_SERVER_ADDRESS, enc, _id];
+        return  [NSString stringWithFormat:@"%@d?dn=%@&id=%@&ttl=1",_server, enc, _id];
     }
-    return [NSString stringWithFormat:@"%@d?dn=%@&ttl=1",kHTTPDNS_DNSPOD_SERVER_ADDRESS, domain];
+    return [NSString stringWithFormat:@"%@d?dn=%@&ttl=1",_server, domain];
 }
 
 -(HTTPDNSRecord *)parseResult:(NSData *)data {

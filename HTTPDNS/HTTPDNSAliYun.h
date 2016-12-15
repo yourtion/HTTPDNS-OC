@@ -13,4 +13,6 @@
 
 - (instancetype)initWithAccountId:(NSString *)account;
 
+- (void)disableHTTPS;
+
 @end
