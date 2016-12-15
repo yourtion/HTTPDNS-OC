@@ -35,30 +35,27 @@ github "yourtion/HTTPDNS-OC"
 ```objc
 #import <HTTPDNS/HTTPDNS.h>
 
-// 初始化客户端
-HTTPDNSClient *dns = [[HTTPDNSClient alloc] init];
-
 // 解析记录
-[dns getRecord:@"www.taobao.com" callback:^(HTTPDNSRecord *record) {
+[[HTTPDNSClient sharedInstance] getRecord:@"www.taobao.com" callback:^(HTTPDNSRecord *record) {
 	NSLog(@"IP : %@", record.ip);
    NSLog(@"description : %@", record.description);
 }];
 
 // 清除缓存
-[dns cleanAllCache];
+[[HTTPDNSClient sharedInstance] cleanAllCache];
 ```
 
 ### 切换 HTTPDNS 服务提供方
 
 ```objc
 // 使用 DNSPod
-[dns useDNSPod];
+[[HTTPDNSClient sharedInstance] useDNSPod];
 
 // 使用 DNSPod 企业版
-[dns useDNSPodProWithAccount:@"Your DNSPod pro accound id" Key:@"Your DNSPod pro key"];
+[[HTTPDNSClient sharedInstance] useDNSPodProWithAccount:@"Your DNSPod pro accound id" Key:@"Your DNSPod pro key"];
 
 // 使用阿里云 HTTPDNS
-[dns useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
+[[HTTPDNSClient sharedInstance] useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
 ```
 
 ## TODO
@@ -66,5 +63,6 @@ HTTPDNSClient *dns = [[HTTPDNSClient alloc] init];
 - [x] 实现 DNSPod 免费版功能
 - [x] 实现 DNSPod 企业版功能（认证接入）
 - [x] 实现AliYun HTTPDNS
+- [x] 实现AliYun HTTPDNS With HTTPS
 - [ ] 提供同步获取方法
 - [x] 提供清除缓存方法

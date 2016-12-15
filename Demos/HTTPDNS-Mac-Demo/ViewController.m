@@ -15,16 +15,15 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-    HTTPDNSClient *dns = [[HTTPDNSClient alloc] init];
-    [dns getRecord:@"www.taobao.com" callback:^(HTTPDNSRecord *record) {
+    [[HTTPDNSClient sharedInstance] getRecord:@"www.taobao.com" callback:^(HTTPDNSRecord *record) {
         NSLog(@"IP : %@", record.ip);
         NSLog(@"description : %@", record.description);
     }];
-    [dns cleanAllCache];
+    [[HTTPDNSClient sharedInstance] cleanAllCache];
     
-    [dns useDNSPod];
-    [dns useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
-    [dns useDNSPodProWithAccount:@"Your DNSPod pro accound id" Key:@"Your DNSPod pro key"]
+    [[HTTPDNSClient sharedInstance] useDNSPod];
+    [[HTTPDNSClient sharedInstance] useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
+    [[HTTPDNSClient sharedInstance] useDNSPodProWithAccount:@"Your DNSPod pro accound id" Key:@"Your DNSPod pro key"];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

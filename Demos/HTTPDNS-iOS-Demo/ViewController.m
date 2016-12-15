@@ -18,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[HTTPDNSClient sharedInstance] getRecord:@"www.taobao.com" callback:^(HTTPDNSRecord *record) {
+        NSLog(@"IP : %@", record.ip);
+        NSLog(@"description : %@", record.description);
+    }];
+    [[HTTPDNSClient sharedInstance] cleanAllCache];
+    
+    [[HTTPDNSClient sharedInstance] useDNSPod];
+    [[HTTPDNSClient sharedInstance] useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
+    [[HTTPDNSClient sharedInstance] useDNSPodProWithAccount:@"Your DNSPod pro accound id" Key:@"Your DNSPod pro key"];
 }
 
 - (void)didReceiveMemoryWarning {

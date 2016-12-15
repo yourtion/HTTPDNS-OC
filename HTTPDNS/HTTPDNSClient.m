@@ -17,7 +17,25 @@
     HTTPDNSBase *_provider;
 }
 
-- (instancetype)init {
+- (instancetype)init
+{
+    @throw [NSException exceptionWithName:@"Do not init HTTPDNSClient"
+                                   reason:@"You should use [HTTPDNSClient sharedInstance]"
+                                 userInfo:nil];
+    return nil;
+}
+
++ (HTTPDNSClient *)sharedInstance
+{
+    static HTTPDNSClient*_sharedInstance = nil;
+    static dispatch_once_t oncePredicate;
+    dispatch_once(&oncePredicate, ^{
+        _sharedInstance = [[HTTPDNSClient alloc] initPrivate];
+    });
+    return _sharedInstance;
+}
+
+- (instancetype)initPrivate {
     self = [super init];
     if (self) {
         _cache = [[NSMutableDictionary alloc] init];
@@ -39,6 +57,15 @@
     if (key) {
         [self cleanAllCache];
         _provider =  [[HTTPDNSAliYun alloc] initWithAccountId:key];
+    }
+}
+
+- (void)useAliYunWithoutHTTPSWithKey:(NSString *)key {
+    if (key) {
+        [self cleanAllCache];
+        HTTPDNSAliYun *dns = [[HTTPDNSAliYun alloc] initWithAccountId:key];
+        [dns disableHTTPS];
+        _provider = dns;
     }
 }
 

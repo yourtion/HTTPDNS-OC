@@ -15,6 +15,11 @@
 @interface HTTPDNSClient : NSObject
 
 /**
+ *  HTTPDNSClient sharedInstance
+ */
++ (HTTPDNSClient *)sharedInstance;
+
+/**
  *  Clean record cache
  */
 - (void)cleanAllCache;
