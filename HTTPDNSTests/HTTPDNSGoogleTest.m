@@ -37,11 +37,11 @@ static NSString *account = @"GYX";
     NSData *resultData = [@"{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"apple.com.\",\"type\":1}],\"Answer\":[{\"name\":\"apple.com.\",\"type\":1,\"TTL\":2365,\"data\":\"17.172.224.47\"},{\"name\":\"apple.com.\",\"type\":1,\"TTL\":2365,\"data\":\"17.178.96.59\"},{\"name\":\"apple.com.\",\"type\":1,\"TTL\":2365,\"data\":\"17.142.160.59\"}]}" dataUsingEncoding:kCFStringEncodingUTF8];
     
     HTTPDNSRecord *result = [[[HTTPDNSGoogle alloc] init] parseResult:resultData];
-    XCTAssertEqualObjects(result.ip, @"17.178.96.59");
+    XCTAssertEqualObjects(result.ip, @"17.172.224.47");
     XCTAssertEqual([result.ips count], 3);
-    XCTAssertEqualObjects(result.ips[0], @"17.178.96.59");
-    XCTAssertEqualObjects(result.ips[1], @"17.142.160.5");
-    XCTAssertEqualObjects(result.ips[2], @"17.172.224.47");
+    XCTAssertEqualObjects(result.ips[0], @"17.172.224.47");
+    XCTAssertEqualObjects(result.ips[1], @"17.178.96.59");
+    XCTAssertEqualObjects(result.ips[2], @"17.142.160.59");
     XCTAssertLessThan(result.timeout, [[NSDate date] timeIntervalSince1970] + 2365 * 1000);
 }
 
