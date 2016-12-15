@@ -30,6 +30,11 @@
 - (void)useDNSPod;
 
 /**
+ *  Use Google DNS-over-HTTP Provider
+ */
+- (void)useGoogle;
+
+/**
  *  Use AliYun Provider
  *
  *  @param key accound id from aliyun

@@ -56,13 +56,17 @@ github "yourtion/HTTPDNS-OC"
 
 // 使用阿里云 HTTPDNS
 [[HTTPDNSClient sharedInstance] useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
+
+// 使用 Google DNS-over-HTTP
+[[HTTPDNSClient sharedInstance] useGoogle];
 ```
 
 ## TODO
 
 - [x] 实现 DNSPod 免费版功能
 - [x] 实现 DNSPod 企业版功能（认证接入）
-- [x] 实现AliYun HTTPDNS
-- [x] 实现AliYun HTTPDNS With HTTPS
+- [x] 实现 AliYun HTTPDNS
+- [x] 实现 AliYun HTTPDNS With HTTPS
+- [x] 实现 Google DNS-over-HTTP
 - [ ] 提供同步获取方法
 - [x] 提供清除缓存方法

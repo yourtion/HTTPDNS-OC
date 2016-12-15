@@ -41,6 +41,12 @@
 		CBDFBC761D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */; };
 		CBDFBC781D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */; };
 		CBDFBC791D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */; };
+		CBE754881E0235D0004BFE61 /* HTTPDNSGoogle.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE754861E0235D0004BFE61 /* HTTPDNSGoogle.h */; };
+		CBE754891E0235D0004BFE61 /* HTTPDNSGoogle.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE754861E0235D0004BFE61 /* HTTPDNSGoogle.h */; };
+		CBE7548A1E0235D0004BFE61 /* HTTPDNSGoogle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE754871E0235D0004BFE61 /* HTTPDNSGoogle.m */; };
+		CBE7548B1E0235D0004BFE61 /* HTTPDNSGoogle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE754871E0235D0004BFE61 /* HTTPDNSGoogle.m */; };
+		CBE7548D1E0236AF004BFE61 /* HTTPDNSGoogleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE7548C1E0236AF004BFE61 /* HTTPDNSGoogleTest.m */; };
+		CBE7548E1E0236AF004BFE61 /* HTTPDNSGoogleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE7548C1E0236AF004BFE61 /* HTTPDNSGoogleTest.m */; };
 		CBEF15791D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */; };
 		CBEF157A1D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */; };
 		CBEF157B1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */; };
@@ -91,6 +97,9 @@
 		CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSDNSPod.m; sourceTree = "<group>"; };
 		CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSDNSPodTest.m; sourceTree = "<group>"; };
 		CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSAliYunTest.m; sourceTree = "<group>"; };
+		CBE754861E0235D0004BFE61 /* HTTPDNSGoogle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSGoogle.h; sourceTree = "<group>"; };
+		CBE754871E0235D0004BFE61 /* HTTPDNSGoogle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSGoogle.m; sourceTree = "<group>"; };
+		CBE7548C1E0236AF004BFE61 /* HTTPDNSGoogleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSGoogleTest.m; sourceTree = "<group>"; };
 		CBEF15771D1532A00028B2B1 /* HTTPDNSCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSCryptor.h; sourceTree = "<group>"; };
 		CBEF15781D1532A00028B2B1 /* HTTPDNSCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDNSCryptor.m; sourceTree = "<group>"; };
 		CBEF157D1D1537100028B2B1 /* HTTPDNSHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDNSHex.h; sourceTree = "<group>"; };
@@ -173,6 +182,7 @@
 				CB7E82DA1D17876800767E10 /* HTTPDNSUtilTest.m */,
 				CBDFBC771D1946AA00D52170 /* HTTPDNSAliYunTest.m */,
 				CBDFBC741D193F0B00D52170 /* HTTPDNSDNSPodTest.m */,
+				CBE7548C1E0236AF004BFE61 /* HTTPDNSGoogleTest.m */,
 			);
 			path = HTTPDNSTests;
 			sourceTree = "<group>";
@@ -186,6 +196,8 @@
 				CB14CB591D0FAEC20077903F /* HTTPDNSAliYun.m */,
 				CBD4EBB01D0D0CBA006FFD74 /* HTTPDNSDNSPod.h */,
 				CBD4EBB11D0D0CBA006FFD74 /* HTTPDNSDNSPod.m */,
+				CBE754861E0235D0004BFE61 /* HTTPDNSGoogle.h */,
+				CBE754871E0235D0004BFE61 /* HTTPDNSGoogle.m */,
 			);
 			name = Provider;
 			sourceTree = "<group>";
@@ -217,6 +229,7 @@
 				CB14CB5B1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
 				CBD4EBB31D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CBEF157A1D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */,
+				CBE754891E0235D0004BFE61 /* HTTPDNSGoogle.h in Headers */,
 				CB14D4DB1D095A6900EB35C9 /* HTTPDNSUtil.h in Headers */,
 				CBEF15801D1537100028B2B1 /* HTTPDNSHex.h in Headers */,
 			);
@@ -233,6 +246,7 @@
 				CB14CB5A1D0FAEC20077903F /* HTTPDNSAliYun.h in Headers */,
 				CBD4EBB21D0D0CBA006FFD74 /* HTTPDNSDNSPod.h in Headers */,
 				CBEF157F1D1537100028B2B1 /* HTTPDNSHex.h in Headers */,
+				CBE754881E0235D0004BFE61 /* HTTPDNSGoogle.h in Headers */,
 				CBEF15791D1532A00028B2B1 /* HTTPDNSCryptor.h in Headers */,
 				CB65B2A01D053E7C00434C3A /* HTTPDNSUtil.h in Headers */,
 			);
@@ -392,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE7548B1E0235D0004BFE61 /* HTTPDNSGoogle.m in Sources */,
 				CBD4EBAD1D0D08AC006FFD74 /* HTTPDNSBase.m in Sources */,
 				CB14D4D81D095A5800EB35C9 /* HTTPDNSClient.m in Sources */,
 				CBEF157C1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */,
@@ -407,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE7548A1E0235D0004BFE61 /* HTTPDNSGoogle.m in Sources */,
 				CB65B29D1D053E5300434C3A /* HTTPDNSClient.m in Sources */,
 				CB65B2A61D05424600434C3A /* HTTPDNSRecord.m in Sources */,
 				CBEF157B1D1532A00028B2B1 /* HTTPDNSCryptor.m in Sources */,
@@ -422,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE7548D1E0236AF004BFE61 /* HTTPDNSGoogleTest.m in Sources */,
 				CBDFBC781D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */,
 				CBDFBC751D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */,
 				CB7E82DB1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */,
@@ -432,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE7548E1E0236AF004BFE61 /* HTTPDNSGoogleTest.m in Sources */,
 				CB7E82DC1D17876800767E10 /* HTTPDNSUtilTest.m in Sources */,
 				CBDFBC761D193F0B00D52170 /* HTTPDNSDNSPodTest.m in Sources */,
 				CBDFBC791D1946AA00D52170 /* HTTPDNSAliYunTest.m in Sources */,

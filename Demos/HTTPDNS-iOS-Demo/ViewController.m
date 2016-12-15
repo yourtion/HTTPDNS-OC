@@ -25,6 +25,12 @@
     [[HTTPDNSClient sharedInstance] cleanAllCache];
     
     [[HTTPDNSClient sharedInstance] useDNSPod];
+    
+    [[HTTPDNSClient sharedInstance] useGoogle];
+    [[HTTPDNSClient sharedInstance] getRecord:@"apple.com" callback:^(HTTPDNSRecord *record) {
+        NSLog(@"IP : %@", record.ip);
+        NSLog(@"description : %@", record.description);
+    }];
     [[HTTPDNSClient sharedInstance] useAliYunWithKey:@"Your Aliyun HTTPNDS accound id"];
     [[HTTPDNSClient sharedInstance] useDNSPodProWithAccount:@"Your DNSPod pro accound id" Key:@"Your DNSPod pro key"];
 }

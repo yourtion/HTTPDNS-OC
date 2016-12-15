@@ -10,6 +10,7 @@
 #import "HTTPDNSUtil.h"
 #import "HTTPDNSDNSPod.h"
 #import "HTTPDNSAliYun.h"
+#import "HTTPDNSGoogle.h"
 
 @implementation HTTPDNSClient
 {
@@ -52,6 +53,12 @@
     [self cleanAllCache];
     _provider = [[HTTPDNSDNSPod alloc] init];
 }
+
+- (void)useGoogle {
+    [self cleanAllCache];
+    _provider =  [[HTTPDNSGoogle alloc] init];
+}
+
 
 - (void)useAliYunWithKey:(NSString *)key {
     if (key) {
